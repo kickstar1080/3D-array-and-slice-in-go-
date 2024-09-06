@@ -44,4 +44,18 @@ func main() {
 	//test print
 	fmt.Printf("\n %d\n", slice1)
 
+	//filling the slices
+	//we can use multiple for
+
+	//1th for is for the [i][][]
+	for i := 0; i < n; i++ {
+		//2th for is for the [][j][]
+		for j := 0; j < m; j++ {
+			//3th for is for the [][][k]
+			for k := 0; k < p; k++ {
+				fmt.Scanln(&slice1[i][j][k])
+			}
+		}
+	}
+	fmt.Printf("\n = ", slice1)
 }
